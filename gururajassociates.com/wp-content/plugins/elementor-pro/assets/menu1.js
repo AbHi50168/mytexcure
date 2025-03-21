@@ -214,7 +214,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Create dropdown icon
     const dropdownIcon = document.createElement("span");
-    dropdownIcon.innerHTML = "&#9662;"; // Downward triangle symbol
+    dropdownIcon.innerHTML = ""; // Downward triangle symbol
     dropdownIcon.style.marginLeft = "8px";
     servicesMenuItem.appendChild(dropdownIcon);
 
