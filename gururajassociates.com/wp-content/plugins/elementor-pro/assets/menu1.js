@@ -208,67 +208,68 @@
 // });
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    const servicesMenuItem = document.querySelector(".menu-item-392 > a");
-    const subMenu = document.querySelector(".menu-item-392 .sub-menu");
+// document.addEventListener("DOMContentLoaded", function () {
+//     const servicesMenuItem = document.querySelector(".menu-item-392 > a");
+//     const subMenu = document.querySelector(".menu-item-392 .sub-menu");
 
-    // Create dropdown icon
-    const dropdownIcon = document.createElement("span");
-    dropdownIcon.innerHTML = ""; // Downward triangle symbol
-    dropdownIcon.style.marginLeft = "8px";
-    servicesMenuItem.appendChild(dropdownIcon);
+//     // Create dropdown icon
+//     const dropdownIcon = document.createElement("span");
+//     dropdownIcon.innerHTML = ""; // Downward triangle symbol
+//     dropdownIcon.style.marginLeft = "8px";
+//     servicesMenuItem.appendChild(dropdownIcon);
 
-    // Toggle submenu on click
-    servicesMenuItem.addEventListener("click", function (event) {
-        event.preventDefault(); // Prevent default anchor behavior
-        subMenu.classList.toggle("open");
-    });
+//     // Toggle submenu on click
+//     servicesMenuItem.addEventListener("click", function (event) {
+//         event.preventDefault(); // Prevent default anchor behavior
+//         subMenu.classList.toggle("open");
+//     });
 
-    // Close submenu when clicking outside
-    document.addEventListener("click", function (event) {
-        if (!servicesMenuItem.contains(event.target) && !subMenu.contains(event.target)) {
-            subMenu.classList.remove("open");
-        }
-    });
+//     // Close submenu when clicking outside
+//     document.addEventListener("click", function (event) {
+//         if (!servicesMenuItem.contains(event.target) && !subMenu.contains(event.target)) {
+//             subMenu.classList.remove("open");
+//         }
+//     });
 
-    // Apply styles for submenu
-    subMenu.style.display = "none";
-    subMenu.style.position = "absolute";
-    subMenu.style.background = "#ffffff";
-    subMenu.style.boxShadow = "0px 4px 6px rgba(0, 0, 0, 0.1)";
-    subMenu.style.padding = "10px";
-    subMenu.style.borderRadius = "4px";
-    subMenu.style.minWidth = "200px";
-    subMenu.style.overflow = "hidden";
+//     // Apply styles for submenu
+//     subMenu.style.display = "none";
+//     subMenu.style.position = "absolute";
+//     subMenu.style.background = "#ffffff";
+//     subMenu.style.boxShadow = "0px 4px 6px rgba(0, 0, 0, 0.1)";
+//     subMenu.style.padding = "10px";
+//     subMenu.style.borderRadius = "4px";
+//     subMenu.style.minWidth = "200px";
+//     subMenu.style.overflow = "hidden";
 
-    // Style submenu items
-    document.querySelectorAll(".sub-menu a").forEach(item => {
-        item.style.display = "block";
-        item.style.padding = "10px";
-        item.style.color = "#000000";
-        item.style.background = "#f8f9fa";
-        item.style.textDecoration = "none";
-        item.style.borderRadius = "4px";
-        item.style.marginBottom = "5px";
+//     // Style submenu items
+//     document.querySelectorAll(".sub-menu a").forEach(item => {
+//         item.style.display = "block";
+//         item.style.padding = "10px";
+//         item.style.color = "#000000";
+//         item.style.background = "#f8f9fa";
+//         item.style.textDecoration = "none";
+//         item.style.borderRadius = "4px";
+//         item.style.marginBottom = "5px";
 
-        // Add hover effect
-        item.addEventListener("mouseover", function () {
-            item.style.background = "#003366"; // Navy Blue (or initial color)
-            item.style.color = "#ffffff"; // White text
-        });
-        item.addEventListener("mouseout", function () {
-            item.style.background = "#f8f9fa";
-            item.style.color = "#000000";
-        });
-    });
+//         // Add hover effect
+//         item.addEventListener("mouseover", function () {
+//             item.style.background = "#003366"; // Navy Blue (or initial color)
+//             item.style.color = "#ffffff"; // White text
+//         });
+//         item.addEventListener("mouseout", function () {
+//             item.style.background = "#f8f9fa";
+//             item.style.color = "#000000";
+//         });
+//     });
 
-    // Show/hide submenu
-    document.styleSheets[0].insertRule(".sub-menu.open { display: block !important; }", 0);
+//     // Show/hide submenu
+//     document.styleSheets[0].insertRule(".sub-menu.open { display: block !important; }", 0);
 
-    // Ensure each menu item navigates correctly
-    document.querySelectorAll(".sub-menu a").forEach(item => {
-        item.addEventListener("click", function (event) {
-            window.location.href = this.href;
-        });
-    });
-});
+//     // Ensure each menu item navigates correctly
+//     document.querySelectorAll(".sub-menu a").forEach(item => {
+//         item.addEventListener("click", function (event) {
+//             window.location.href = this.href;
+//         });
+//     });
+// });
+
